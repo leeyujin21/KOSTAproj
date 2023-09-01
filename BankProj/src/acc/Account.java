@@ -1,5 +1,7 @@
 package acc;
 
+import java.io.Serializable;
+
 import exc.BankError;
 import exc.BankException;
 
@@ -10,7 +12,7 @@ import exc.BankException;
 //(ex) grade(VIP), 10000원 입금시 10400이 입금
 //정보 호출시 등급도 포함
 //(ex) 계좌번호: 10001, 이름: 홍길동, 잔액: 100000, 등급: VIP
-public class Account {
+public class Account implements Serializable{
 	String id;
 	String name;
 	int balance;
